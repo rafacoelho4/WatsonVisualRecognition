@@ -16,4 +16,4 @@ app.listen(3333, ()=>{console.log('Rodando')});
 //     return response.status(404).send({ msg: 'Aplicação rodando'});
 // });
 
-app.post('/', ImageController.detect);
+// app.post('/', ImageController.detect);

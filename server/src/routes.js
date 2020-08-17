@@ -1,10 +1,10 @@
 const { Router } = require('express');
 
-const ImageController = require('./VisualRecog');
+const ImageController = require('./controllers/ImageController');
 
 const routes = Router();
 
 // Rota para listar
-routes.get('/', ImageController.detect);
+routes.post('/', ImageController.detect);
 
 module.exports = routes;

@@ -1,5 +1,5 @@
 const express = require('express');
-const ImageController = require('./VisualRecog');
+const ImageController = require('./controllers/ImageController');
 const routes = require('./routes');
 const cors = require('cors');
 
@@ -16,4 +16,4 @@ app.listen(3333, ()=>{console.log('Rodando')});
 //     return response.status(404).send({ msg: 'Aplicação rodando'});
 // });
 
-app.get('/', ImageController.detect);
+app.post('/', ImageController.detect);
